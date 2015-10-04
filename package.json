@@ -1,10 +1,10 @@
 {
   "name": "@golfnow/seneca-mongo-store",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Seneca data store plugin for MongoDB",
   "main": "mongo-store.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha test/*.test.js"
+    "test": "./node_modules/.bin/mocha test/*.test.js --seneca.log.all"
   },
   "repository": {
     "type": "git",
@@ -32,9 +32,10 @@
   },
   "devDependencies": {
     "async": ">=0.9.0",
-    "seneca": "plugin",
+    "lab": "^6.1.0",
     "mocha": ">=1.20.1",
-    "seneca-store-test": ">=0.2.2"
+    "seneca": "plugin",
+    "seneca-store-test": ">=0.2.2 < 1"
   },
   "files": [
     "LICENSE.txt",
