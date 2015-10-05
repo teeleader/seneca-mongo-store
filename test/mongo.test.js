@@ -40,10 +40,6 @@ describe('mongo', function(){
     testcount++
     extratest(si,done)
   })
-
-  it('close', function(done){
-    shared.closetest(si,testcount,done)
-  })
 })
 
 
